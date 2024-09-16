@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script> 
+        function isPandigital(num) {
+    let numStr = num.toString();
+    let digitSet = new Set(numStr);
+    
+    for (let digit = 0; digit <= 9; digit++) {
+        if (!digitSet.has(digit.toString())) {
+            return false; 
+        }
+    }
+    
+    return true; 
+}
+
+console.log(isPandigital(98140723568910)); // Output: true
+console.log(isPandigital(90864523148909)); // Output: false
+
+    </script>
+</head>
+<body>   
+</body>
+</html>

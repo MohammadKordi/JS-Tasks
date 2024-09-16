@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+let drink = prompt("Enter your favorite drink:");
+drink = drink.toLowerCase();
+let priceMessage;
+switch (drink) {
+    case "banana":
+        priceMessage = "The price of a banana drink is 20 dollars.";
+        break;
+    case "apple":
+        priceMessage = "The price of an apple drink is 15 dollars.";
+        break;
+    case "orange":
+        priceMessage = "The price of an orange drink is 18 dollars.";
+        break;
+    case "grape":
+        priceMessage = "The price of a grape drink is 22 dollars.";
+        break;
+    case "pineapple":
+        priceMessage = "The price of a pineapple drink is 25 dollars.";
+        break;
+    default:
+        priceMessage = "Sorry, we don't have information about that drink.";
+}
+console.log(priceMessage);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
